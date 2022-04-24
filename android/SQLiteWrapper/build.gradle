@@ -38,4 +38,5 @@ task generatePlugin(type: Copy) {
     from ('build/outputs/aar')
     into ('../../dist/')
     include (project.name + "-release.aar")
+    rename( project.name + "-release.aar", project.name + ".aar" )
 }
