@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="debug_name">IPRO_DEBUG</string>
+    <string name="debug_name">SQLITEWRAPPER_DEBUG</string>
     <string name="plugin_name">SQLiteWrapper</string>
 </resources>

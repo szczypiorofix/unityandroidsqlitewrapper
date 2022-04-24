@@ -23,7 +23,7 @@ public class SQLiteWrapper {
     public SQLiteWrapper( Context context ) throws Exception {
         this.context = context;
         if ( context == null ) {
-            throw new Exception( "IPRO_DEBUG: (SQLiteWrapper) Context application cannot be null !!!" );
+            throw new Exception( "SQLITEWRAPPER_DEBUG: (SQLiteWrapper) Context application cannot be null !!!" );
         }
     }
 
