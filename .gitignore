@@ -490,3 +490,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+
+# Custom filex
+dist/UnityEngine.dll
+dist/UnityEngine.xml
+
