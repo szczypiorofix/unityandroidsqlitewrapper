@@ -10,12 +10,18 @@ namespace unityconnector {
     
     public class SQLiteConnector {
 
+        public static readonly string DEBUG_NAME = "SQLITEWRAPPER_DEBUG";
+
 
         public SQLiteConnector() {
-            Debug.Log( "SQLITEWRAPPER_DEBUG: Library (DLL) connected." );
+            Debug.Log( $"{ DEBUG_NAME }: Library (DLL) connected." );
         }
 
 
+
+        public void testFunction() {
+            Debug.Log( $"{ DEBUG_NAME }: test function..." );
+        }
 
 
 
