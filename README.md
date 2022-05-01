@@ -1,5 +1,5 @@
 # Unity3D Android SQLite Wrapper
-This is a project that will allow to use "native" SQLite on Android target in Unity 3D engine.
+This is a project that will allow to use native SQLite on Android in Unity 3D engine.
 
 
 ## Required

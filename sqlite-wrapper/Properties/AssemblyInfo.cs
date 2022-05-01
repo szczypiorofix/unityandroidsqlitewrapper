@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("unityconnector")]
+[assembly: AssemblyTitle("sqlite-wrapper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("unityconnector")]
+[assembly: AssemblyProduct("sqlite-wrapper")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5696b2f5-7892-4d70-86e3-5d61427baf59")]
+[assembly: Guid("38bb711d-f078-40f5-9f78-692908f76486")]
 
 // Version information for an assembly consists of the following four values:
 //

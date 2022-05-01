@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unityconnector", "unityconnector.csproj", "{5696B2F5-7892-4D70-86E3-5D61427BAF59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sqlite-wrapper", "sqlite-wrapper.csproj", "{38BB711D-F078-40F5-9F78-692908F76486}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5696B2F5-7892-4D70-86E3-5D61427BAF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5696B2F5-7892-4D70-86E3-5D61427BAF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5696B2F5-7892-4D70-86E3-5D61427BAF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5696B2F5-7892-4D70-86E3-5D61427BAF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BB711D-F078-40F5-9F78-692908F76486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BB711D-F078-40F5-9F78-692908F76486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BB711D-F078-40F5-9F78-692908F76486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BB711D-F078-40F5-9F78-692908F76486}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B89A8619-BD8C-41E5-91D6-EB87E18D9F8F}
+		SolutionGuid = {5A0A5236-DF77-4463-B305-0EC21F0C7C12}
 	EndGlobalSection
 EndGlobal
