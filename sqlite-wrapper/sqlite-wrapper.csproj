@@ -44,6 +44,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Database.cs" />
+    <Compile Include="src\DataTable.cs" />
     <Compile Include="src\SqliteWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

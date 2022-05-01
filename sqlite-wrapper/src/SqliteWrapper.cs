@@ -11,11 +11,9 @@ namespace sqlite_wrapper {
     public class SQLiteWrapper {
 
 
-        public static void testFunction() {
 
-            Debug.Log( "SQLITE_WRAPPER: testFUnction()" );
 
-        }
+
 
 
     }
