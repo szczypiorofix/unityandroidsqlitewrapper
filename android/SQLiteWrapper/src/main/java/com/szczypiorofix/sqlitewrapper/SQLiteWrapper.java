@@ -34,8 +34,8 @@ public class SQLiteWrapper {
      * @param version (int) database version
      */
     @SuppressWarnings("unused")
-    public void openDatabase( String dbName, int version ) {
-        databaseHandler = new DatabaseHandler( context, dbName, null, version );
+    public void openDatabase( String dbName, int version, String createTableQuery ) {
+        databaseHandler = new DatabaseHandler( context, dbName, null, version, createTableQuery );
         db = databaseHandler.getSQLiteDatabase();
         Log.i( context.getString( R.string.debug_name ), context.getString( R.string.plugin_name ) + " ( openDatabase ): Database " + databaseHandler.getDatabaseName() + " opened." );
     }
@@ -51,6 +51,12 @@ public class SQLiteWrapper {
         }
         databaseHandler.close();
         Log.i( context.getString( R.string.debug_name ), context.getString( R.string.plugin_name ) + " ( closeDatabase ): Database " + databaseHandler.getDatabaseName() + " closed." );
+    }
+
+
+
+    public void executeSQL( String query ) {
+        db.execSQL( query );
     }
 
 
