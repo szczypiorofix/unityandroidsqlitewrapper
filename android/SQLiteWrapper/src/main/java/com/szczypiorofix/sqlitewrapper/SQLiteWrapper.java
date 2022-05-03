@@ -2,6 +2,7 @@ package com.szczypiorofix.sqlitewrapper;
 
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
@@ -53,6 +54,10 @@ public class SQLiteWrapper {
         Log.i( context.getString( R.string.debug_name ), context.getString( R.string.plugin_name ) + " ( closeDatabase ): Database " + databaseHandler.getDatabaseName() + " closed." );
     }
 
+
+    public Cursor getSelectResults( String selectQuery ) {
+        return databaseHandler.selectQuery( selectQuery );
+    }
 
 
     public void executeSQL( String query ) {
