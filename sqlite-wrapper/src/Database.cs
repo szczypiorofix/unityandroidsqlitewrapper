@@ -82,17 +82,44 @@ namespace sqlite_wrapper {
 
         public void Open() {
 
-            mOpened = true;
+            if ( sqliteWrapper == null ) {
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: (Database.Open) Sqlite Wrapper object is null !!!" );
+                mOpened = false;
+                return;
+            }
 
-            Debug.Log( SQLiteWrapper.DEBUG_NAME + " (Database.Open) Database opened." );
+            try {
+                sqliteWrapper.Call( "openDatabase", mName );
+                mOpened = true;
+                Debug.Log( SQLiteWrapper.DEBUG_NAME + " (Database.Open) Database opened." );
+            } catch ( SqliteWrapperException exc ) {
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: (Database.Open) An error occured while opening database connection:" );
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: " + exc );
+                mOpened = false;
+            }
+
         }
 
 
         public void Close() {
 
-            mOpened = false;
+            if (sqliteWrapper == null) {
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: (Database.Close) Sqlite Wrapper object is null !!!" );
+                mOpened = false;
+                return;
+            }
 
-            Debug.Log( SQLiteWrapper.DEBUG_NAME + " (Database.Close) Database closed." );
+            try {
+                sqliteWrapper.Call( "closeDatabase", mName );
+                mOpened = true;
+                Debug.Log( $"{ SQLiteWrapper.DEBUG_NAME } (Database.Close) Database { mName } closed." );
+            } catch (SqliteWrapperException exc) {
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: (Database.Close) An error occured while closing database ({ mName }) connection:" );
+                Debug.LogError( $"{ SQLiteWrapper.DEBUG_NAME }: " + exc );
+                mOpened = false;
+            }
+
+
         }
 
 
